@@ -1,0 +1,9 @@
+1.Create connection to db
+2.Create SchemaRegistryClient and Producer instances in producer code
+3.In Producer code, 10 records are written to the database after each 5 sec duration so as to
+  keep the database with new records ready to be read by producer code and write it to kafka topic
+  continuously.
+4.Create SchemaRegistryClient and Consumer instances in producer code
+5.Parallely consumer starts consuming data from the kafka topic and write it back to a separate json file
+  for each consumer instance created(5 in this case)
+6.Provide KeyBoard Enterrupt anytime to stop the process.

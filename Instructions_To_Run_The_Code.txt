@@ -1,0 +1,17 @@
+1.Open 5 cmd instances and run below commands to execute 5 consumers
+> python confluent_consumer.py 1
+> python confluent_consumer.py 2
+> python confluent_consumer.py 3
+> python confluent_consumer.py 4
+> python confluent_consumer.py 5
+
+here the arguments in the command denotes the consumer instances 
+eg. argument passed as 1 means 1st consumer instance
+similarly, argument passed as 2 means 2nd consumer instance and so on.
+The idea is to accept this argument and will be used to create separte json file for each
+consumer based on the argument passed.
+
+2. Open another cmd instance and run the producer code with below command
+>python confluent_producer.py
+
+3.Provide KeyBoard Enterrupt anytime to stop the process.
